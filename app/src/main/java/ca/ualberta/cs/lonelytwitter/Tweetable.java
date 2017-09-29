@@ -1,13 +1,35 @@
+/*
+ * Interface Name: Tweetable
+ *
+ * Version: version 1.0
+ *
+ * Date: September 28, 2017
+ *
+ * Copyright (c) Team X, CMPUT301, University of Alberta, All Rights Reserved, You may use, distribute, or modify this code under terms and conditions of the Code of Students Behaviour at University of Alberta
+ */
+
 package ca.ualberta.cs.lonelytwitter;
 
 import java.util.Date;
 
 /**
- * Created by Shally on 2017-09-14.
+ * Tweet Interface
+ * @author Shally
+ * @version 1.0
+ * @see NormalTweet
+ * @see ImportantTweet
+ * @since 1.0
  */
-
 public interface Tweetable {
+    /**
+     * interface to get content of tweet
+     * @return
+     */
     public String getMessage();
 
+    /**
+     * interface to get the date of the tweet
+     * @return
+     */
     public Date getDate();
 }

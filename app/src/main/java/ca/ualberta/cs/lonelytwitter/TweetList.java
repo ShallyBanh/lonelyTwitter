@@ -17,8 +17,8 @@ public class TweetList {
 
     }
 
-    public void add(Tweet tweet) throws IllegalArgumentException{
-        if(tweets.contains(tweet)){
+    public void addTweet(Tweet tweet) throws IllegalArgumentException{
+        if(hasTweet(tweet)){
             throw new IllegalArgumentException("duplicate tweet");
         }
         tweets.add(tweet);

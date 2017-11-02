@@ -25,11 +25,13 @@ public interface Tweetable {
      * interface to get content of tweet
      * @return
      */
-    public String getMessage();
+    //Refactor 2: Unnecessary interface modifier. public is redundant for interface methods
+    String getMessage();
 
     /**
      * interface to get the date of the tweet
      * @return
      */
-    public Date getDate();
+    //Refactor 3: Unnecessary interface modifier. public is redundant for interface methods
+    Date getDate();
 }

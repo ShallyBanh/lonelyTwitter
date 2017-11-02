@@ -46,8 +46,9 @@ public class LonelyTwitterActivity extends Activity {
 	private EditText bodyText;
 	private ListView oldTweetsList;
 
-	private ArrayList<Tweet> tweets = new ArrayList<Tweet>();
-	private ArrayList<Tweet> tweetList;
+	//Refactor 5: Declaration can have final modifier
+	private final ArrayList<Tweet> tweets = new ArrayList<Tweet>();
+	//Refactor 1: Removed unused declaration
 	private ArrayAdapter<Tweet> adapter;
 	/** Called when the activity is first created. */
 	@Override
@@ -133,7 +134,7 @@ public class LonelyTwitterActivity extends Activity {
 			throw new RuntimeException();
 		}
 
-		ArrayList<String> tweets = new ArrayList<String>();
+		//Refactor 4: Removed unused assignment "tweets"
 	}
 
 	/**
